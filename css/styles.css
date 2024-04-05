@@ -176,9 +176,10 @@ img {
   border: none;
   min-width: 169px;
   transition-property: background-color, color, transform;
-  transition-duration: 2000ms;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
@@ -307,8 +308,8 @@ img {
   align-items: center;
   justify-content: center;
   transition-property: background-color, color, transform;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socialmedia-link:hover,
@@ -366,7 +367,8 @@ img {
   padding: 40px 32px;
   transform: translateY(100%);
   transition-property: background-color, color, transform;
-  transition-duration: 1000ms;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-desc {
@@ -467,8 +469,8 @@ img {
   align-items: center;
   justify-content: center;
   transition-property: background-color, color, transform;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socialmedia-link:hover,
