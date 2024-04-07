@@ -53,6 +53,8 @@ img {
   padding-top: 24px;
   /* padding-bottom: 24px; */ /* according to the comment in HW #3*/
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -101,6 +103,9 @@ img {
   padding-bottom: 24px;
   position: relative;
   display: block; /* according to the comment in HW #3*/
+  transition-property: background-color, color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover,
@@ -113,6 +118,9 @@ img {
 
 .current-page {
   color: #404bbf;
+  transition-property: background-color, color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-page::after {
@@ -145,9 +153,11 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-bg.jpg);
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -206,9 +216,11 @@ img {
 
 .advantages-list-link {
   width: calc((100% - 3 * 24px) / 4);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.advantages-icons {
+.advantages-svg {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   width: 264px;
@@ -217,6 +229,7 @@ img {
   padding: 24px 0;
   justify-content: center;
   margin-bottom: 8px;
+  fill: #f4f4fd;
 }
 
 .advantages-list-title {
@@ -307,7 +320,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: background-color, color, transform;
+  transition-property: background-color, color; /*, transform;*/
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -348,6 +361,8 @@ img {
 
 .portfolio-list-item:hover .portfolio-item-cover-text {
   transform: translateY(0);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-cover-wrap {
   position: relative;
@@ -479,5 +494,5 @@ img {
 }
 
 .footer-socialmedia-icon {
-  fill: #fff;
+  fill: F4F4FDf;
 }
