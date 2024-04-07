@@ -103,9 +103,10 @@ img {
   padding-bottom: 24px;
   position: relative;
   display: block; /* according to the comment in HW #3*/
-  transition-property: background-color, color, transform;
+  /* transition-property: background-color, color, transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover,
@@ -118,9 +119,10 @@ img {
 
 .current-page {
   color: #404bbf;
-  transition-property: background-color, color, transform;
+  /* transition-property: background-color, color, transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-page::after {
@@ -185,9 +187,10 @@ img {
   border-radius: 4px;
   border: none;
   min-width: 169px;
-  transition-property: background-color, color, transform;
+  /* transition-property: background-color, color, transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -209,14 +212,6 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.advantages-list {
-  display: flex;
-  gap: 24px;
-}
-
-.advantages-list-link {
-  width: calc((100% - 3 * 24px) / 4);
-}
 
 .advantages-svg {
   border: 1px solid #8e8f99;
@@ -228,6 +223,17 @@ img {
   justify-content: center;
   margin-bottom: 8px;
   fill: #f4f4fd;
+  display: flex;
+  align-items: center;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-list-link {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages-list-title {
@@ -320,9 +326,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: background-color, color; /*, transform;*/
+  /* transition-property: background-color, color; , transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socialmedia-link:hover,
@@ -330,7 +337,7 @@ img {
   background-color: #404bbf;
 }
 .team-socialmedia-icon {
-  fill: #fff;
+  fill: #f4f4fd;
 }
 /* -------------------------------------- */
 
@@ -381,9 +388,10 @@ img {
   height: 100%;
   padding: 40px 32px;
   transform: translateY(100%);
-  transition-property: background-color, color, transform;
+  /* transition-property: background-color, color, transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-desc {
@@ -418,6 +426,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-section {
@@ -483,9 +492,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: background-color, color, transform;
+  /* transition-property: background-color, color, transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socialmedia-link:hover,
